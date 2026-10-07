@@ -2,6 +2,20 @@
 
 ESP32-SOLO-1 / SSD1306 128×64向け。登録一覧、SCAN画面、ロータリーエンコーダの操作、NVS登録保存、登録機器の自動接続を追加しています。登録は最大4台、BLE接続枠も4台です。
 
+![BLE MIDI → DINの外観](docs/photos/ble-midi-to-din.jpg)
+
+外観。背景は画像編集で白に整えています（筐体・端子・画面の表示は撮影時のまま）。
+
+| 未登録 | SCAN | 登録・接続済み | 削除の確認 |
+|---|---|---|---|
+| ![未登録の画面](docs/photos/oled-1-no-device.jpg) | ![SCAN画面](docs/photos/oled-2-scan.jpg) | ![登録・接続済みの画面](docs/photos/oled-3-connected.jpg) | ![削除確認の画面](docs/photos/oled-4-remove.jpg) |
+
+実機の画面（動画から切り出し、加工なし）。登録している機器名は使用時の例です。
+
+![Roland Sonic Cellの前に置いた使用時の様子](docs/photos/with-sonic-cell.jpg)
+
+使用時の様子（奥はRoland Sonic Cell、加工なし）。作品の紹介ページ：https://tera-works.pages.dev/projects/ble-midi-to-din
+
 ## 表示と操作
 
 通常画面の記号は **● 接続済み、○ 登録済み・未接続、… 接続中、! 接続エラー**。`>`が選択位置です。3行を超える一覧は、選択に合わせて表示範囲が切り替わります。下段の`2/4`は「接続済み2台／登録4台」で、実際の件数を表示します。
